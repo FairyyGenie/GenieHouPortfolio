@@ -34,7 +34,7 @@ body {
 }
 ul {
   list-style-type: none;
-  font-size: 20px;
+  font-size: min(3vw,20px);
   display: flex;
   scroll-padding-bottom: 1vh;
   justify-content: space-between;
@@ -97,6 +97,7 @@ img {
   height: 100%;
   border-radius: 20px;
   object-fit: cover;
+  /* filter: invert(58%) sepia(63%) saturate(6974%) hue-rotate(168deg) brightness(105%) contrast(101%); */
   
 }
 #item-1:checked ~ .cards #project-2,
@@ -188,16 +189,16 @@ img {
 }
 .player {
   background-color: #048BA8;
-  border-radius: 8px;
-  min-width: 30vw;
-  padding: 16px 10px;
+  border-radius: 15px;
+  min-width: 25vw;
+  padding: 16px 8px;
 }
 .upper-part {
   position: relative;
   display: flex;
   align-items: center;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   height: 36px;
   overflow: hidden;
 }
@@ -207,9 +208,10 @@ img {
 
 }
 .project-info .title {
-  color: #403d40;
-  font-size: 30px;
+  color: #fef9ef;
+  font-size: min(2.5vw, 25px);;
   line-height: 24px;
+  overflow-y: hidden;
 }
 .sub-line {
   display: flex;
@@ -219,8 +221,8 @@ img {
 }
 .subtitle{
   font-size: 12px;
-  line-height: 16px;
-  color: #c6c5c6;
+  top:2px;
+  color: #fef9ef;
 }
 
 .info-area {
@@ -229,7 +231,7 @@ img {
   top: 0;
   transition: transform 0.4s ease-in;
 }
-#item-2:checked ~ .player #test {
+#item-1:checked ~ .player #test {
   transform: translateY(0);
 }
 #item-2:checked ~ .player #test {
@@ -237,4 +239,16 @@ img {
 }
 #item-3:checked ~ .player #test {
   transform: translateY(-80px);
+}
+#item-4:checked ~ .player #test {
+  transform: translateY(-120px);
+}
+#item-5:checked ~ .player #test {
+  transform: translateY(-160px);
+}
+#item-6:checked ~ .player #test {
+  transform: translateY(-200px);
+}
+#item-7:checked ~ .player #test {
+  transform: translateY(-240px);
 }
