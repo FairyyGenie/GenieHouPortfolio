@@ -155,3 +155,19 @@ h1 {
     }
   }
 }
+.Genie {
+  margin-top: 10vh;
+  display: relative;
+  justify-content: center;
+}
+.Genie img {
+  width: 20vw;
+  min-width: 200px;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 20%;
+}
+.Genie img:hover {
+  border: 10px solid #048ba8;
+  border-radius: 20%;
+}

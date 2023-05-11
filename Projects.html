@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="jquery-3.6.4.min.js"></script>
+    <title>Genie Hou</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Genie Hou</a></li>
+        <li><a href="AboutMe.html">About Me</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="ForPortfolio/GenieHouResume_2023.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+    <div><h1>Genie Hou's Project Gallery</h1></div>
+    <!-- Project Carousel Gallery -->
+    <div class="container">
+      <input type="radio" name="slider" id="item-1" checked />
+      <input type="radio" name="slider" id="item-2" />
+      <input type="radio" name="slider" id="item-3" />
+      <input type="radio" name="slider" id="item-4" />
+      <input type="radio" name="slider" id="item-5" />
+      <input type="radio" name="slider" id="item-6" />
+      <input type="radio" name="slider" id="item-7" />
+      <!-- Images for the projects -->
+      <div class="cards">
+        <label class="card" for="item-1" id="project-1">
+          <img src="ForPortfolio/ArtistsGo-1.png" alt="project" />
+        </label>
+
+        <label class="card" for="item-2" id="project-2">
+          <img src="ForPortfolio/1.png" alt="project" />
+        </label>
+
+        <label class="card" for="item-3" id="project-3">
+          <img src="ForPortfolio/final-1.png" alt="project" />
+        </label>
+
+        <label class="card" for="item-4" id="project-4">
+          <img src="ForPortfolio/RG1.png" alt="project" />
+        </label>
+
+        <label class="card" for="item-5" id="project-5">
+          <img src="ForPortfolio/LiveCoding-1.png" alt="project" />
+        </label>
+
+        <label class="card" for="item-6" id="project-6">
+          <img src="ForPortfolio/VR5.png" alt="project" />
+        </label>
+
+        <label class="card" for="item-7" id="project-7">
+          <img src="ForPortfolio/VR1-2.png" alt="project" />
+        </label>
+      </div>
+      <div class="player">
+        <div class="upper-part">
+          <div class="info-area" id="test">
+            <button class="primary" onclick="window.dialog.showModal();">
+              <label class="project-info" id="project-info-1">
+                <div class="title">Artists Go</div>
+                <div class="sub-line">
+                  <div class="subtitle">fullstack App</div>
+                </div>
+              </label>
+            </button>
+
+            <dialog id="dialog">
+              <h2>Artists Go</h2>
+              <p>A fullstack MERN app</p>
+              <p>
+                Created by Genie Hou, Derek Han, Isabel Chen, and Joseph
+                Yusufov. <br />
+                ArtistsGo allows college students to exchange artistic products
+                and services and also inspire collaboration. <br />
+                Through ArtistsGo, fellow students can buy another student's
+                handmade pottery, beaded necklaces, or even dance lessons.
+                <br />
+                It is a platform for student artists to market their products
+                and create a customer base. <br />
+                The app is developed with the full MERN stack, with MongoDB,
+                NodeJS, Express, and React. <br />
+                ArtistsGo is created for students to share and connect.
+              </p>
+              <img src="ForPortfolio/ArtistsGo-1.png" alt="project" />
+              <img src="ForPortfolio/ArtistsGo-2.png" alt="project" />
+              <img src="ForPortfolio/ArtistsGo-3.png" alt="project" />
+              <button
+                onclick="window.dialog.close();"
+                aria-label="close"
+                class="x"
+              >
+                ❌
+              </button>
+            </dialog>
+
+            <button class="primary" onclick="window.dialog1.showModal();">
+              <label class="project-info" id="project-info-2">
+                <div class="title">Guess that song</div>
+                <div class="sub-line">
+                  <div class="subtitle">Processing</div>
+                </div>
+              </label>
+            </button>
+
+            <dialog id="dialog1">
+              <h2>Guess that Song</h2>
+              <p>Processing game</p>
+              <p>
+                A processing game using Genius API to create a game to guess the
+                song by lyrics.
+              </p>
+              <img src="ForPortfolio/1.png" alt="project" />
+              <img src="ForPortfolio/2.png" alt="project" />
+              <img src="ForPortfolio/3.png" alt="project" />
+              <button
+                onclick="window.dialog1.close();"
+                aria-label="close"
+                class="x"
+              >
+                ❌
+              </button>
+            </dialog>
+
+            <button class="primary" onclick="window.dialog2.showModal();">
+              <label class="project-info" id="project-info-3">
+                <div class="title">Music and order</div>
+                <div class="sub-line">
+                  <div class="subtitle">Arduino+Processing</div>
+                </div>
+              </label>
+            </button>
+
+            <dialog id="dialog2">
+              <h2>Music and Order</h2>
+              <p>Processing game</p>
+              <p>
+                This is a game designed to test the players ability to match
+                frequencies coming from the arduino panel with a note. <br />
+                The black and white circle represents the questions and when
+                being pressed the arduino panel will make a sound matching the
+                frequency of a note. <br />
+                The user needs to pull the C, D, E, F, G, A, B choices to match
+                with circles. <br />
+                The LED lights on the panel will tell the users which ones are
+                right and which ones are wrong.
+              </p>
+              <img src="ForPortfolio/final-1.png" alt="project" />
+              <img src="ForPortfolio/final-2.png" alt="project" />
+              <img src="ForPortfolio/final-6.jpg" alt="project" />
+              <button
+                onclick="window.dialog2.close();"
+                aria-label="close"
+                class="x"
+              >
+                ❌
+              </button>
+            </dialog>
+
+            <button class="primary" onclick="window.dialog3.showModal();">
+              <label class="project-info" id="project-info-4">
+                <div class="title">Recycle Ninja</div>
+                <div class="sub-line">
+                  <div class="subtitle">Processing</div>
+                </div>
+              </label>
+            </button>
+
+            <dialog id="dialog3">
+              <h2>Recycle Ninja</h2>
+              <p>Processing game</p>
+              <p>
+                This is a game developed to test users knowledge on what can be
+                recycled and where. <br />
+                Using the left and right key, users can direct the trash to the
+                right bin.
+              </p>
+              <img src="ForPortfolio/RG3.png" alt="project" />
+              <img src="ForPortfolio/RG2.png" alt="project" />
+              <img src="ForPortfolio/RG1.png" alt="project" />
+              <button
+                onclick="window.dialog3.close();"
+                aria-label="close"
+                class="x"
+              >
+                ❌
+              </button>
+            </dialog>
+
+            <button class="primary" onclick="window.dialog4.showModal();">
+              <label class="project-info" id="project-info-4">
+                <div class="title">Live Coding</div>
+                <div class="sub-line">
+                  <div class="subtitle">TidalCycle and JavaScript</div>
+                </div>
+              </label>
+            </button>
+
+            <dialog id="dialog4">
+              <h2>Live Coding</h2>
+              <p>Team Bestie performance in TidalCycle and JavaScript</p>
+              <p>
+                The performance consists of audio and visual component using
+                Tidalcycle and javascripts. <br />
+                We created this live coding experience and performed at the
+                NYUAD IM showcase.<br />
+                <a
+                  href="https://drive.google.com/file/d/1iYAGA2fnjI07zovn0p2F2p7C58koexTH/view?usp=sharing"
+                  >Here is the video.</a
+                >
+              </p>
+              <img src="ForPortfolio/LiveCoding-1.png" alt="project" />
+              <img src="ForPortfolio/LiveCoding-2.png" alt="project" />
+              <img src="ForPortfolio/LiveCoding.png" alt="project" />
+              <button
+                onclick="window.dialog4.close();"
+                aria-label="close"
+                class="x"
+              >
+                ❌
+              </button>
+            </dialog>
+
+            <button class="primary" onclick="window.dialog5.showModal();">
+              <label class="project-info" id="project-info-4">
+                <div class="title">A Happy Place</div>
+                <div class="sub-line">
+                  <div class="subtitle">VR in unity</div>
+                </div>
+              </label>
+            </button>
+
+            <dialog id="dialog5">
+              <h2>A Happy Place</h2>
+              <p>Unity based VR experience</p>
+              <p>
+                This is a project designed for people to share their
+                happy-places. <br />
+                The VR experience consists of three scenes which are my personal
+                happy places. <br />
+                First is the beach scene, second is the Snow mountain scene, and
+                last is the view in space scene. <br />
+                In each of the scene, there is a door for the users to find and
+                reach the next destination. <br />
+                The landing scene consists of a gallery of the pictures I took
+                of the travel destination I have been to and three doors leading
+                the users to the three scenes.<br />
+                Through the experience, I aim to share with the audience the
+                happy places in my mind.
+              </p>
+              <img src="ForPortfolio/VR1.png" alt="project" />
+              <img src="ForPortfolio/VR2.png" alt="project" />
+              <img src="ForPortfolio/VR3.png" alt="project" />
+              <img src="ForPortfolio/VR4.png" alt="project" />
+              <img src="ForPortfolio/VR5.png" alt="project" />
+              <button
+                onclick="window.dialog5.close();"
+                aria-label="close"
+                class="x"
+              >
+                ❌
+              </button>
+            </dialog>
+
+            <button class="primary" onclick="window.dialog6.showModal();">
+              <label class="project-info" id="project-info-4">
+                <div class="title">A Star's Story</div>
+                <div class="sub-line">
+                  <div class="subtitle">VR in unity</div>
+                </div>
+              </label>
+            </button>
+
+            <dialog id="dialog6">
+              <h2>A Star's Story</h2>
+              <p>Unity based 3D project</p>
+              <p>
+                The projet tells a story of a star trying to escape it own solar
+                system...<br />
+                Using a storytelling method of building the story, it will feel
+                like a walking in a story.
+              </p>
+              <img src="ForPortfolio/VR1-2.png" alt="project" />
+              <video width="70%" height="auto" controls>
+                <source src="ForPortfolio/VR1-2.mov" type="video/mp4" />
+              </video>
+              <button
+                onclick="window.dialog6.close();"
+                aria-label="close"
+                class="x"
+              >
+                ❌
+              </button>
+            </dialog>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
