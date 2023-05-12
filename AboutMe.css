@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
 }
+/* design for the About me page */
 html,
 body {
   margin: 0;
@@ -23,10 +24,8 @@ body {
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y;
   background-size: 10vw auto, 10vw auto, 10vw auto, 10vw auto, 80vw auto;
   overflow-y: scroll;
-  /* backdrop-filter: blur(2px); */
-  /* background-blend-mode: luminosity; */
 }
-
+/* nav bar */
 .nav {
   position: absolute;
   display: block;
@@ -60,7 +59,7 @@ a:hover {
   color: #ee7674;
   opacity: 0.6;
 }
-
+/* window design */
 :root {
   --default-padding: 10px;
 }
@@ -92,6 +91,7 @@ a:hover {
   z-index: 1;
   box-shadow: 0px 5px 6px -2px #b9f 5e;
 }
+/* image design */
 .Genie {
   display: flex;
   flex-direction: row;
@@ -185,6 +185,7 @@ pre {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(30px);
 }
+/* social media */
 .social img {
   width: 50px;
   height: auto;

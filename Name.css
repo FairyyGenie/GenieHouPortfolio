@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
 }
+/* css for the landing page */
 html,
 body {
   margin: 0;
@@ -9,6 +10,7 @@ body {
   width: 100%;
   height: 100%;
 }
+/* design for the body */
 body {
   display: flex;
   align-items: center;
@@ -22,10 +24,9 @@ body {
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 10vw auto, 10vw auto, 10vw auto, 10vw auto;
   overflow-y: scroll;
-  /* backdrop-filter: blur(2px); */
-  /* background-blend-mode: luminosity(80%) ; */
 }
 
+/* design for navigation bar */
 .nav {
   position: absolute;
   display: block;
@@ -50,6 +51,7 @@ li {
   display: inline;
 }
 
+/* design for links and hovering  */
 a {
   text-decoration: none;
   color: #fef9ef;
@@ -60,6 +62,7 @@ a:hover {
   opacity: 0.6;
 }
 
+/* design of the text roller animation */
 .main {
   height: 100vh;
   width: 100%;
@@ -155,6 +158,8 @@ h1 {
     }
   }
 }
+
+/* design for the image */
 .Genie {
   margin-top: 10vh;
   display: relative;
